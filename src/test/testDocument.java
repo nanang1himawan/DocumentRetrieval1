@@ -20,6 +20,7 @@ public class testDocument {
         // computer
         // information
         // retrieval
+        //https://github.com/nanang1himawan/DocumentRetrieval1.git
         String result[] = doc1.getListofTerm();
         for (int i = 0; i < result.length; i++) {
             System.out.println("term "+i+" = "+result[i]);

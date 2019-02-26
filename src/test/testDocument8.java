@@ -17,6 +17,7 @@ import model.Term;
  * @author nanang1himawan
  */
 public class testDocument8 {
+        //https://github.com/nanang1himawan/DocumentRetrieval1.git
 
     public static void main(String[] args) {
         // seting dokumen

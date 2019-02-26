@@ -10,6 +10,7 @@ package test;
  * @author nanang1himawan
  */
 public class testRegex {
+        //https://github.com/nanang1himawan/DocumentRetrieval1.git
     public static void main(String[] args) {
         String test = "ini sebuah, kalimat..?";
         test = test.replaceAll("[,?.]", "");

@@ -15,6 +15,7 @@ import model.Posting;
  * @author nanang1himawan
  */
 public class testDocument2 {
+        //https://github.com/nanang1himawan/DocumentRetrieval1.git
     public static void main(String[] args) {
         // seting dokumen
         Document doc1 = new Document(1, "computer information retrieval.");

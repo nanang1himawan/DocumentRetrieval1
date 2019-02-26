@@ -12,6 +12,7 @@ import model.Document;
  * @author nanang1himawan
  */
 public class testDocument1 {
+        //https://github.com/nanang1himawan/DocumentRetrieval1.git
     public static void main(String[] args) {
         Document doc1 = new Document(1, "computer information retrieval.");
         Document doc2 = new Document(2, "computer organization and architecture");
