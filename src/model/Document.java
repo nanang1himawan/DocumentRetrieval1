@@ -1,11 +1,12 @@
 /*
  * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Template
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package model;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
@@ -13,7 +14,8 @@ import java.util.StringTokenizer;
  *
  * @author nanang1himawan
  */
-public class Document {
+public class Document implements Comparable<Document>{
+
     private int id;
     private String content;
 
@@ -28,7 +30,7 @@ public class Document {
         this.id = id;
         this.content = content;
     }
-    
+
     /**
      * @return the content
      */
@@ -56,15 +58,15 @@ public class Document {
     public void setId(int id) {
         this.id = id;
     }
-    
-    public String[] getListofTerm(){
+
+    public String[] getListofTerm() {
         String value = this.getContent();
         value = value.replaceAll("[.,?!]", "");
         return value.split(" ");
     }
-    
-    public ArrayList<Posting> getListofPosting(){
-       // panggil fungsi getListOfTerm
+
+    public ArrayList<Posting> getListofPosting() {
+        // panggil fungsi getListOfTerm
         String tempString[] = getListofTerm();
         // buat objek ArrayList<Posting> result untuk menampung hasil
         ArrayList<Posting> result = new ArrayList<Posting>();
@@ -104,7 +106,12 @@ public class Document {
                 }
             }
         }
-return result;
+        return result;
     }
-    
+
+    @Override
+    public int compareTo(Document doc) {
+        return id-doc.getId();
+    }
+
 }

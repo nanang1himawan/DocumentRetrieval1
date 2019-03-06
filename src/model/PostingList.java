@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 /**
  *
- * @author nanang1himawan
+ * @author admin
  */
 public class PostingList {
     private List<Posting> postingList = new List<Posting>() {
