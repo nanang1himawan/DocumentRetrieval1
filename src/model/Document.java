@@ -31,6 +31,10 @@ public class Document implements Comparable<Document>{
         this.content = content;
     }
 
+    Document(int id) {
+    this.id = id;
+    }
+
     /**
      * @return the content
      */
